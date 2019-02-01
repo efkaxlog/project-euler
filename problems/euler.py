@@ -7,3 +7,12 @@ def is_prime(num):
             if num % i == 0:
                 return False
         return True
+
+# Returns product of digits in list
+def product(digits):
+    if len(digits) == 0:
+        return 0
+    product = 1
+    for d in digits:
+        product *= d
+    return product
